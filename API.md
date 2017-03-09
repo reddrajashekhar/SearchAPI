@@ -1,76 +1,86 @@
-iTunes Search API
-=============
 
-Overview
--------------
+Introduction 
+      The test plan is the document that is written by reviewing requirement documents. The test plan consists of scope, approach, resources, and schedule of intended testing activities. It identifies test items, the features to be tested, the testing tasks and who will do each task (roles and responsibilities) and any risks and its solutions.
+Objective:
+The webpage consists of ITunes Store, App Store, iBooks Store and Mac App Store. By using the Search API one can search fields in the website. On can search for variety of content ie,. Movies, podacasts, music, Mac App Store, audio books, and Tv shows.
 
-The Search API allows you to place search fields in your website to search for content within the iTunes Store, App Store, iBooks Store and Mac App Store. You can search for a variety of content; including apps, iBooks, movies, podcasts, music, music videos, audiobooks, and TV shows.
+The first step in this project will be like creating manual tests. The API testing is sending request and receiving response.The team members in the project are as follows:
+
+Team Members in the Project:
+
+Resource         NameRole
+Greg John        Developer
+Michael          Project Manager / Tester
+Rajashsekhar     Tester
+
+Scope
+The scope of this project include all the requirements. All the requirements should be included and all the requirements should be tested.By the end of all the tests one has to cover all the following:
+1.Reviewing the test plan and create the manual test and it has to include every step.
+2.All the test documents should be saved for future reference
+3.The document should be available when running the tests.
+4.Enter results and appropriate comments
+5.View results
 
 
 
-Searching
--------------
-
+ssumptions / Risks
+Assumptions
 A fully-qualified URL to search must have the following format:
-
 https://itunes.apple.com/search?parameterkeyvalue
+Risks
+The risks that will have impact on the project are identified and action to mitigate this impact should be mentioned in the project.
+Test Approach
+The project is based on Agile methodology with Bi-weekly iterations. In every two weeks, the module which is developed will be delivered to team and will be tested.
 
-Where parameterkeyvalue can be one or more parameter key and value pairs indicating the details of your query.
+This projects mainly includes exploratory testing and end-to-end testing and team tests the whole system by using various tools.Tests for planned functionality will be created and added to iTunes Search API as we get iterations of the product.
 
-To construct a parameter key and value pair, you must concatenate each parameter key with an equal sign (=) and a value string. For example: key1=value1. To create a string of parameter key and value pairs, you must concatenate each pair using an ampersand (&). For example:
+4.1 Test Automation
+             Automated testing is a part of the process. At the starting of the process manual testing plays a key role and automation testing is done once done with the manual testing.
+	      
+	       Test Environment
+	       A new environment consisting of all the required web server and build application and the databases 
 
-key1=value1&key2=value2&key3=value3
+	       Milestones / Deliverables
+	       Test Plan
+	       The test plan consists of the following: 
+
+	       Task Name         Start        Finish     EffortComments
+	         1.Review Requirements 
+		     documents
+		 2.Creating Test Plan         5 days
+                 3.Create initial test 
+		     estimates                3 days
+	         4.Development 1st 
+	            Iteration
+	         5.Deploy to test 
+		   environment
+		 6.Functional 
+		   testing - Iteration 1
+		 7.Deploy 2nd Iteration 
+		     to QA test environment
+       	         8.Functional testing - 
+	            Iteration 2
+       	         9.Regression testing
+	        10.Automate Regression 
+		    testing
+		11.System testing
+                12.End-to-End Testing
+	        13.Staging environment
+	        14.Performance testing
+	        15.Release to Production 
+	
+	Environment
+	    Deliverables
+		   Deliverable                 For                 Date / Milestones								    
+		   
+		   1.Requirements 
+		     Traceability Matrix      Project Manager;
+		                              Business Analyst                              
+		   2.Test Plan                Project Manager; 
+					      QA Manager;																	                      Test Team
+	           3.Test Results              Project Manage	
+		   4.Test Status report      QA Manager, 
+																						                                     Product Owner
 
 
 
-Parameters
--------------
-
-The following table defines the parameter keys and values you can specify to search for content within the iTunes Store, App Store, iBooks Store and Mac App Store:
-
-
-<table>
-    <tr>
-      <th>Parameter Key</th>
-      <th>Description</th> 
-      <th>Required</th>
-      <th>Values</th>
-    </tr>
-  
-    <tr>
-        <td>term</td>
-        <td>The URL-encoded text string you want to search for.<br><br>
-            For example : 'jack+johnson'</td>
-        <td>Y</td>
-        <td>Any URL-encoded text string.
-
-Note: URL encoding replaces spaces with the plus (+) character and all characters except the following are encoded: letters, numbers, periods (.), dashes (-), underscores (_), and asterisks (*).</td>
-    </tr>
-    
-    <tr>
-        <td>country</td>
-        <td>The two-letter country code for the store you want to search. The search uses the default store front for the specified country. <br><br>
-        For example : 'US'<br>
-        The default is 'US'</td>
-        <td>N</td>
-        <td>See http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 for a list of ISO Country Codes.</td>
-    </tr>
-    
-    <tr>
-        <td>media</td>
-        <td>The media type you want to search for.<br><br> 
-            For example : 'movie'<br>
-            The default is 'all'</td>
-        <td>N</td>
-        <td>movie, podcast, music, musicVideo, audiobook, shortFilm, tvShow, software, ebook, all</td>
-    </tr>
-    
-    <tr>
-        <td>limit</td>
-        <td>The number of search results you want the iTunes Store to return.<br><br> 
-            For example : 25<br>
-            The default is 50</td>
-        <td>N</td>
-        <td>1 to 200</td>
-    </tr>
-</table>
