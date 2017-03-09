@@ -39,24 +39,24 @@ Scope
 	5.Deploy to test		    
 	  environment							
 	6.Functional testing 
-	  - Iteration						 							  					          7.Deploy 2nd Iteration 
-		 																			   to QA test environment							      
-																					   8.Functional testing - 
-         Iteration			
-  9.Regression Testing 
- 10.Automate Regression	 testing 					
- 11.System testing
-   12.End-to-End Testing																		13.Staging environment							  	    
-   14.Performance testing
-    15.Release to Production 
+	  - Iteration						 							  					                7.Deploy 2nd Iteration 
+	 to QA test environment			
+	8.Functional testing - 
+          Iteration			
+        9.Regression Testing 
+       10.Automate Regression testing 					
+       11.System testing
+       12.End-to-End Testing
+       13.Staging environment
+       14.Performance test
+       15.Release to Production 
 
 	Environment																																									 Deliverables
-																																										         Deliverable                 For                 Date / Milestones       
-																																									 	       1.Requirements 
-  	 Traceability Matrix         Project Manager 
+																																										         Deliverable                 For                 Date / Milestones    
+																																											 1.Requirements 
+  	   Traceability Matrix         Project Manager 
 	                          Business Analyst    
-       2.Test Plan                Project Manager
-		               QA Manager; Test Team
-																					       3.Test Results            Project Manager  						
-																					       4.Test Status report      QA Manager, Introduction 
-																																								
+         2.Test Plan                Project Manager
+ 		               QA Manager; Test Team
+																					         3.Test Results            Project Manager  						
+																					        4.Test Status report      QA Manager:																																							
