@@ -12,8 +12,8 @@ Objective:
 	using the Search API one can search fields in the website.One can search for variety of
 	content ie,.Movies,Podcasts, Music, App store, Audio Books, and Tv Shows.
 
-	The first step in this project will be like like creating manual tests. The API testing 
-	is sending request and receiving response. The team members in the
+	The first step in this project will be like like creating manual tests. The API testing.
+	The team members in the project are as follows:
 
 Team Members:
         ResourceName               Role
